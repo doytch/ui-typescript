@@ -17,7 +17,7 @@ class Greeting extends React.Component<P> {
     const greetings = [];
 
     for (let i = 0; i < count; i++) {
-      greetings.push(<div>Hello {name}!</div>);
+      greetings.push(<div key={i}>Hello {name}!</div>);
     }
 
     return greetings;
